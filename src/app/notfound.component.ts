@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  template: `<h1>Home</h1>`,
+  template: `<h1>Not Found</h1>`,
 })
-export class HomeComponent {}
+export class NotFoundComponent {}
