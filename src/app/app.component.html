@@ -1,42 +1,6 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)<br />
-  Umesh {{ firstname }}<br />
-  {{ 45 + 78 }}<br />
-  {{ getTitle() }}<br />
-  Largest: {{ max(100, 200) }}
-</p>
-<p>Show me <span class="{{ giveMeRed }}">red</span></p>
-<input
-  name="UserName"
-  [(ngModel)]="UserName"
-  class="form-control"
-  type="search"
-  value="greg"
-  placeholder="Type some text"
-  [formControl]="SearchControl"
-/>
-<h3>GitHub Results</h3>
-<div *ngIf="isLoading">
-  Getting Data...
-  <i class="fas fa-spinner fa-spin fa-3x"></i>
-</div>
-<div *ngFor="let user of users" class="media">
-  <a href="{{ user.html_url }}">
-    <img
-      class="mr-3"
-      src="{{ user.avatar_url }}"
-      alt="Generic placeholder image"
-      width="64"
-      height="64"
-    />
-  </a>
-  <div class="media-body">
-    <h5 class="mt-0">{{ user.login }}</h5>
-    Score: {{ user.score }}
-    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-    ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
-    viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-    lacinia congue felis in faucibus.
-  </div>
-</div>
+<ul>
+  <li>
+    <a routerLink="#">Home</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>>
