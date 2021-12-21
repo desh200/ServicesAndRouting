@@ -5,11 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home.component';
+import { NotFoundComponent } from './notfound.component';
+import { GitHubComponent } from './github.component';
+import { routing } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpClientModule, ReactiveFormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule, ReactiveFormsModul HomeComponent, NotFoundComponent,GitHubComponent],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
 })
