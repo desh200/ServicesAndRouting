@@ -13,7 +13,16 @@ import { routing } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpClientModule, ReactiveFormsModul HomeComponent, NotFoundComponent,GitHubComponent,GitHubUserComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    HomeComponent,
+    NotFoundComponent,
+    GitHubComponent,
+    GitHubUserComponent,
+  ],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
 })
