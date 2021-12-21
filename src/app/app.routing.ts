@@ -5,7 +5,7 @@ import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './notfound.component';
 
 import { GitHubComponent } from './github.component';
-import { GitHubUserComponent } from './github.component';
+import { GitHubUserComponent } from './githubuser.component';
 
 export const routing = RouterModule.forRoot([
   { path: '', component: HomeComponent },

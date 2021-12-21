@@ -13,17 +13,15 @@ import { routing } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    ReactiveFormsModule,
+  imports: [BrowserModule, FormsModule, HttpClientModule, ReactiveFormsModule],
+  declarations: [
+    AppComponent,
+    HelloComponent,
     HomeComponent,
     NotFoundComponent,
     GitHubComponent,
     GitHubUserComponent,
   ],
-  declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
