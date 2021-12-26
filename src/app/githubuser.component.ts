@@ -20,4 +20,8 @@ export class GitHubUserComponent {
       this.score = params['score'];
     });
   }
+  /*
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }&*/
 }
