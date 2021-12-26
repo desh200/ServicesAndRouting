@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   <h1>User Score: {{score}}</h1>
   `,
 })
-export class GitHubUserComponent {
+export class GitHubUserComponent implements OnInit, OnDestroy {
   login;
   score;
   subscription;
@@ -20,8 +20,8 @@ export class GitHubUserComponent {
       this.score = params['score'];
     });
   }
-  /*
+
   ngOnDestroy() {
     this.subscription.unsubscribe();
-  }&*/
+  }
 }
