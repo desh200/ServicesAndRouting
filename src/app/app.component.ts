@@ -29,7 +29,7 @@ export class AppComponent {
 
   ngOnInit() {
     this.UserName = 'greg';
- 
+
     this.SearchControl.valueChanges
       .pipe(
         filter((text) => text.length >= 3),
