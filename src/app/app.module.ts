@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth-guard.service';
 import { LoginService } from './login.service';
 import { LoginComponent } from './login.component';
+import { PreventUnsavedCangesGuard } from './prevent-unsaved-changes-guard.service';
 
 @NgModule({
   imports: [
@@ -35,6 +36,7 @@ import { LoginComponent } from './login.component';
   providers: [
     AuthGuard, // <------------ Include here
     LoginService,
+    PreventUnsavedCangesGuard,
   ],
   bootstrap: [AppComponent],
 })
