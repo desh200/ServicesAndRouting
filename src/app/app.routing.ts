@@ -17,5 +17,7 @@ export const routing = RouterModule.forRoot([
     component: GitHubUserComponent,
     canActivate: [AuthGuard],
   },
+
+  { path: 'login', component: LoginComponent },
   { path: '**', component: NotFoundComponent },
 ]);

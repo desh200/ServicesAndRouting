@@ -12,7 +12,8 @@ import { GitHubUserComponent } from './githubuser.component';
 import { routing } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth-guard.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,6 +29,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NotFoundComponent,
     GitHubComponent,
     GitHubUserComponent,
+    LoginComponent,
   ],
   providers: [
     AuthGuard, // <------------ Include here
