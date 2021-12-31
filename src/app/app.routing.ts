@@ -6,7 +6,7 @@ import { NotFoundComponent } from './notfound.component';
 
 import { GitHubComponent } from './github.component';
 import { GitHubUserComponent } from './githubuser.component';
-import { AuthGuard } from './authguard.service';
+import { AuthGuard } from './auth-guard.service';
 export const routing = RouterModule.forRoot([
   { path: '', component: HomeComponent },
   { path: 'GitHub', component: GitHubComponent, canActivate: [AuthGuard] },
