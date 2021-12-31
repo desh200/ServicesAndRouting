@@ -12,7 +12,7 @@ import { GitHubUserComponent } from './githubuser.component';
 import { routing } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth-guard.service';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [
     BrowserModule,
