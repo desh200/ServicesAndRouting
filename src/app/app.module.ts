@@ -12,6 +12,7 @@ import { GitHubUserComponent } from './githubuser.component';
 import { routing } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth-guard.service';
+import { LoginService } from './login.service';
 import { LoginComponent } from './login.component';
 
 @NgModule({
@@ -33,6 +34,7 @@ import { LoginComponent } from './login.component';
   ],
   providers: [
     AuthGuard, // <------------ Include here
+    LoginService,
   ],
   bootstrap: [AppComponent],
 })
