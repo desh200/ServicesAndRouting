@@ -8,10 +8,12 @@ import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './notfound.component';
 import { LoginModule } from './login/login.module';
 import { GitHubModule } from './github/github.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     BrowserModule,
+    RouterModule,
     FormsModule,
     HttpClientModule,
     LoginModule,
