@@ -18,6 +18,7 @@ import { RouterModule, Routes } from '@angular/router';
     HttpClientModule,
     LoginModule,
     GitHubModule,
+    RouterModule,
   ],
   declarations: [
     AppComponent,
