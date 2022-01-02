@@ -17,4 +17,4 @@ import { AuthGuard } from './auth-guard.service';
     PreventUnsavedCangesGuard,
   ],
 })
-export class AppModule {}
+export class LoginModule {}
