@@ -6,9 +6,9 @@ import { NotFoundComponent } from './notfound.component';
 import { LoginModule } from './login/login.module';
 import { GitHubModule } from './github/github.module';
 import { routing } from './app.routing';
-import { GitHubRouting } from './github.routing';
+import { GitHubRouting } from './github/github.routing';
 @NgModule({
-  imports: [BrowserModule, LoginModule, GitHubModule, routing, GitHubRouting],
+  imports: [BrowserModule, LoginModule, GitHubModule, GitHubRouting, routing],
   declarations: [AppComponent, HomeComponent, NotFoundComponent],
   providers: [],
   bootstrap: [AppComponent],
